@@ -1,4 +1,4 @@
-# Retrieve Indonesian Election 2024 Data
+# Retrieve 2024 Indonesian Presidential Election Data
 
 ## 1. Introduction
 This project gathers data result of 2024 Indonesian Presidential Election from the official institution, and save it to a database (only support SQLite now) or files.
