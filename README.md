@@ -1,10 +1,10 @@
 # Retrieve Indonesian Election 2024 Data
 
 ## 1. Introduction
-This project gathers data result of Indonesia President and Vice President Election from the official website, and save it to the database (only support SQLite now).
+This project gathers data result of 2024 Indonesian Presidential Election from the official institution, and save it to a database (only support SQLite now) or files.
 
-DISCLAIMER:  
-This project retrieves public (not confidential) data which can be checked at https://pemilu2024.kpu.go.id by everyone, with the purpose for educational only.
+**DISCLAIMER:**  
+This project retrieves *PUBLIC* (no confidential) data which provided by general elections commission (KPU), that can be accessed publicly at https://pemilu2024.kpu.go.id for *educational purposes ONLY*.
 
 ## 2. How to Run:
 ### 2.1. Using Docker
