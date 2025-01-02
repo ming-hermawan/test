@@ -15,7 +15,7 @@ This project retrieves *PUBLIC* (no confidential) data which provided by general
 3. Run docker with command format like below.  
 `docker run -v (Output Folder):/home/out --env DB=(NO/sqlite) --env DB_FILENAME=(SQLite database filename) --env DEBUG=(YES/NO) --env SAVE_JSON_FILES=(YES/NO) --env SAVE_IMAGE_FILES=(YES/NO)`  
 #### Example:
-`docker run -v $PWD/out:/home/out --env DB=sqlite --env DB_FILENAME=ppwp2024.db --env DEBUG=YES --env SAVE_JSON_FILES=YES --env SAVE_IMAGE_FILES=YES minghermawan/pemilu-ppwp-2024`  
+`docker run -v $PWD/out:/home/out --env DB=sqlite --env DB_FILENAME=ppwp2024.db --env DEBUG=NO --env SAVE_JSON_FILES=YES --env SAVE_IMAGE_FILES=NO minghermawan/pemilu-ppwp-2024`  
 #### Explanation:
 `-v` is to map between your output folder with output folder inside Docker.  
 Example; if your new output folder path is /home/test/out at step 2, write `-v /home/test/out:/home/out`.  
@@ -41,7 +41,11 @@ Set value is YES if you want to save images files. Image files will be created i
    - aiofiles
    - python-dotenv
 #### Run:
-`python main.py --save-json-files=(YES/NO) --save-image-files=(YES/NO) --db=(NO/sqlite) --debug=$DEBUG --db-filename=(SQLite database filename);`
+1. `git clone https://github.com/ming-hermawan/pemilu-ppwp-2024.git`
+2. `cd pemilu-ppwp-2024`
+3. `python main.py --save-json-files=(YES/NO) --save-image-files=(YES/NO) --db=(NO/sqlite) --debug=$DEBUG --db-filename=(SQLite database filename);`
+#### Example:
+`python main.py --save-json-files=YES --save-image-files=NO --db=sqlite --debug=NO --db-filename=ppwp2024.db;`
 #### Parameters:
 - `--save-json-files`  
 Set value is YES if you want to write output to JSON files. JSON files will be created in the json folder inside output folder.  
